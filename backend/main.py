@@ -13,8 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class InfraRequest(BaseModel):
-    prompt: str
+
 
 @app.post("/generate")
 def generate_infra(request: InfraRequest):
